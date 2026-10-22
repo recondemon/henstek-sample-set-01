@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Cedar & Fern: an interactive fictional garden studio website sample by HensTek."
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Cedar & Fern · A HensTek website sample</title>
+    <link rel="icon" href="assets/garden.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="demo-bar">
+      <a href="../">HensTek samples <span>↗</span></a
+      ><span>Fictional business · local demo</span
+      ><button id="edit-site">Try the content editor <span>↗</span></button>
+    </div>
+    <header class="header wrap">
+      <a class="brand" href="#home" aria-label="Cedar and Fern home"
+        ><span class="brand-mark" aria-hidden="true">✳</span
+        ><span data-content="name">Cedar & Fern</span></a
+      ><button
+        class="mobile-toggle"
+        id="menu-toggle"
+        aria-expanded="false"
+        aria-controls="nav"
+      >
+        Menu +
+      </button>
+      <nav id="nav" aria-label="Main navigation">
+        <a href="#services">Our services</a><a href="#about">The studio</a
+        ><a href="#faq">Good to know</a
+        ><a class="button small" href="#contact">Let’s talk gardens ↗</a>
+      </nav>
+    </header>
+    <main id="main">
+      <section id="home" class="hero wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="line"></span> A LITTLE NATURE, A LITTLE CLOSER
+          </p>
+          <h1 data-content="headline">Room to grow.</h1>
+          <p class="intro" data-content="intro">
+            Thoughtful gardens for everyday living. From a quiet corner to a
+            complete outdoor space, start with a little possibility.
+          </p>
+          <a class="button" href="#contact"
+            >Find your starting point <span>↗</span></a
+          >
+          <div class="hero-foot">
+            <span class="tiny-flower" aria-hidden="true">✳</span>
+            <p>
+              Spaces that feel like you.<br /><span
+                >Made for the way you live.</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img
+            src="assets/garden.svg"
+            alt="Illustrated courtyard garden with layered foliage, warm paving and a sunlit arch"
+          />
+          <div class="art-note">
+            <span>01 / THE EVERYDAY GARDEN</span
+            ><span>Something good is growing.</span>
+          </div>
+          <div class="stamp" aria-hidden="true">
+            ROOTED IN<br />THE EVERYDAY<span>↘</span>
+          </div>
+        </div>
+      </section>
+      <section class="service-section" id="services">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">01 / WHAT WE CAN DO</p>
+              <h2>A fresh perspective.<br />A practical next step.</h2>
+            </div>
+            <p>
+              You don’t need a blank canvas. Just a space you’d like to enjoy a
+              little more.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article>
+              <span class="number">01</span>
+              <div class="service-symbol" aria-hidden="true">◒</div>
+              <h3 data-content="service1">Garden design</h3>
+              <p>
+                A considered plan for paths, planting and the places you’ll want
+                to spend time.
+              </p>
+              <a href="#contact" data-service="Design"
+                >Explore a design <span>↗</span></a
+              >
+            </article>
+            <article>
+              <span class="number">02</span>
+              <div class="service-symbol" aria-hidden="true">✳</div>
+              <h3 data-content="service2">Seasonal care</h3>
+              <p>
+                Thoughtful tending that helps an established garden find its
+                rhythm, season after season.
+              </p>
+              <a href="#contact" data-service="Care"
+                >Talk about care <span>↗</span></a
+              >
+            </article>
+            <article>
+              <span class="number">03</span>
+              <div class="service-symbol" aria-hidden="true">◐</div>
+              <h3 data-content="service3">Small-space planting</h3>
+              <p>
+                A balcony, a doorstep, a sunny corner. Small spaces can make a
+                lovely difference.
+              </p>
+              <a href="#contact" data-service="Planting"
+                >Start something small <span>↗</span></a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about wrap">
+        <div class="about-art" aria-hidden="true">
+          <div class="arch">
+            <span class="plant stem-one"></span
+            ><span class="plant stem-two"></span><span class="pot"></span>
+          </div>
+          <span class="about-label">A STUDIO WITH ROOM TO LISTEN</span>
+        </div>
+        <div>
+          <p class="eyebrow">02 / THE WAY WE WORK</p>
+          <h2>Less overwhelm.<br />More outside.</h2>
+          <p class="body-large">
+            Good gardens begin with a conversation, not a shopping list.
+          </p>
+          <p>
+            We start with what you have, how you use your space and what you’d
+            like to change. Then we shape a clear plan around your priorities,
+            your time and your budget.
+          </p>
+          <ol class="steps">
+            <li>
+              <span>01</span>
+              <div>
+                <h3>Walk & talk</h3>
+                <p>Share the space and what you have in mind.</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3>Make a plan</h3>
+                <p>Agree the direction, scope and next steps.</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3>Let it grow</h3>
+                <p>Bring it to life, with a guide for what comes next.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section id="faq" class="faq wrap">
+        <div>
+          <p class="eyebrow">03 / GOOD TO KNOW</p>
+          <h2>A few things<br />you might wonder.</h2>
+          <p>Not sure where to start?<br />That’s a good place to begin.</p>
+        </div>
+        <div class="questions">
+          <details>
+            <summary>Do I need to know what I want?</summary>
+            <p>
+              No. Start with what isn’t working and what you’d like to feel
+              different. The first conversation helps find a useful direction.
+            </p>
+          </details>
+          <details>
+            <summary>Can we work with a small space?</summary>
+            <p>
+              Yes. Courtyards, containers and compact corners are part of the
+              example service menu.
+            </p>
+          </details>
+          <details>
+            <summary>How is the work priced?</summary>
+            <p>
+              A real project would receive a written scope and quote before work
+              begins. This demonstration does not sell services or take
+              payments.
+            </p>
+          </details>
+          <details>
+            <summary>Is this a real garden studio?</summary>
+            <p>
+              No. Cedar & Fern is a fictional website sample by HensTek. The
+              content editor and inquiry preview run on your device; no inquiry
+              is sent.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="eyebrow">04 / YOUR NEXT CHAPTER</p>
+            <h2>What could<br />grow here?</h2>
+            <p>
+              Tell us a little about your space.<br />We’ll find the right first
+              step.
+            </p>
+            <div class="contact-meta">
+              <span>STUDIO HOURS</span>
+              <p data-content="hours">Monday–Friday, 9am–5pm</p>
+              <span>OUR PATCH</span>
+              <p data-content="area">
+                A fictional Pacific Northwest garden studio
+              </p>
+            </div>
+          </div>
+          <form id="inquiry">
+            <p class="form-note">TRY THE INQUIRY FLOW · Nothing is sent</p>
+            <div class="two-fields">
+              <label
+                >Your name<input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="100"
+                  placeholder="Alex Taylor" /></label
+              ><label
+                >Email address<input
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  maxlength="254"
+                  placeholder="alex@example.com"
+              /></label>
+            </div>
+            <label
+              >What do you have in mind?<select name="service">
+                <option>Help me choose</option>
+                <option>Design</option>
+                <option>Care</option>
+                <option>Planting</option>
+              </select></label
+            ><label
+              >A little about your space<textarea
+                name="message"
+                required
+                minlength="10"
+                maxlength="2000"
+                rows="4"
+                placeholder="A quiet corner, a whole new garden, something in between…"
+              ></textarea>
+            </label>
+            <p id="inquiry-error" class="error" role="alert"></p>
+            <button class="button light" type="submit">
+              Preview your inquiry <span>↗</span>
+            </button>
+            <p class="privacy-note">
+              Please use fictional details. This demo keeps your entries in this
+              tab and does not send or store inquiries.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="wrap footer">
+      <a class="brand" href="#home"
+        ><span class="brand-mark">✳</span
+        ><span data-content="name">Cedar & Fern</span></a
+      >
+      <p>
+        A fictional garden studio.<br />A working website sample by HensTek.
+      </p>
+      <a
+        href="https://henstek.dev/start?project=website"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Build something like this ↗</a
+      >
+    </footer>
+    <dialog id="editor" aria-labelledby="editor-title">
+      <div class="dialog-top">
+        <div>
+          <p class="eyebrow">ON THIS DEVICE ONLY</p>
+          <h2 id="editor-title">Make it your own.</h2>
+        </div>
+        <button class="close" data-close aria-label="Close content editor">
+          ×
+        </button>
+      </div>
+      <p>
+        Try editing the headline, services and studio details. Preview your
+        draft, then save it to this browser. This demonstrates editing; a real
+        site needs authenticated publishing.
+      </p>
+      <form id="editor-form"></form>
+      <p id="editor-error" class="error" role="alert"></p>
+      <div class="editor-actions">
+        <button class="button" id="save-content">Save on this device</button
+        ><button id="preview-content" class="secondary">Preview draft</button
+        ><button id="undo-content" class="secondary">Undo last save</button
+        ><button id="export-content" class="secondary">Export content</button
+        ><label class="file-label"
+          >Import content<input
+            id="import-content"
+            type="file"
+            accept="application/json,.json" /></label
+        ><button id="reset-content" class="secondary danger">
+          Restore sample
+        </button>
+      </div>
+      <p id="editor-status" role="status"></p>
+    </dialog>
+    <dialog id="inquiry-preview" aria-labelledby="preview-title">
+      <div class="dialog-top">
+        <h2 id="preview-title">Your inquiry, ready to review.</h2>
+        <button class="close" data-close aria-label="Close inquiry preview">
+          ×
+        </button>
+      </div>
+      <p>This is a preview only. Nothing has been sent.</p>
+      <dl id="inquiry-summary"></dl>
+      <button class="button" id="copy-inquiry">Copy inquiry</button>
+      <p id="copy-status" role="status"></p>
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+  </body>
+</html>

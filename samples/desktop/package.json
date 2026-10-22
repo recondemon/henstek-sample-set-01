@@ -1,0 +1,19 @@
+{
+  "name": "cedar-fern-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An offline fictional service-business job board.",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-packager . 'Cedar Fern Studio' --platform=darwin --arch=arm64 --out=../../build/desktop --overwrite"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "45.0.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Studio Board · Cedar & Fern</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="model.js"></script>
+    <script defer src="renderer.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to jobs</a>
+    <aside>
+      <a class="brand" href="../"
+        >✳ <span>Cedar & Fern<small>STUDIO BOARD</small></span></a
+      >
+      <p class="aside-label">YOUR WORKSPACE</p>
+      <button class="nav active" id="all-jobs">▦ &nbsp; All jobs</button
+      ><button class="nav" id="scheduled-jobs">◷ &nbsp; Scheduled</button>
+      <div class="aside-bottom">
+        <span class="avatar">CF</span>
+        <div>
+          Sample studio<small id="storage-mode">Local browser preview</small>
+        </div>
+      </div>
+    </aside>
+    <main id="main">
+      <header>
+        <p><span class="dot"></span> FICTIONAL STUDIO / LOCAL SAMPLE</p>
+        <div>
+          <button class="quiet" id="export">Export</button
+          ><button class="quiet" id="import-button">Import</button
+          ><input
+            id="import"
+            type="file"
+            accept=".json,application/json"
+            hidden
+          /><button class="quiet" id="reset">Reset sample</button>
+        </div>
+      </header>
+      <section class="heading">
+        <div>
+          <p class="eyebrow">A LITTLE ORDER. MORE ROOM TO CREATE.</p>
+          <h1>Good work, in view.</h1>
+          <p>From the first conversation to the final planting.</p>
+        </div>
+        <button class="primary" id="new-job">+ New job</button>
+      </section>
+      <section class="stats" aria-label="Job summary">
+        <article>
+          <span>ACTIVE JOBS</span><strong id="active-count">0</strong
+          ><small>Work still growing</small>
+        </article>
+        <article>
+          <span>IN PROGRESS</span><strong id="progress-count">0</strong
+          ><small>Ready for your attention</small>
+        </article>
+        <article>
+          <span>COMPLETED</span><strong id="complete-count">0</strong
+          ><small>A satisfying place to finish</small>
+        </article>
+      </section>
+      <section class="workspace">
+        <div class="toolbar">
+          <div class="filters" aria-label="Filter jobs">
+            <button class="selected" data-filter="All">All work</button
+            ><button data-filter="New">New</button
+            ><button data-filter="Scheduled">Scheduled</button
+            ><button data-filter="In progress">In progress</button
+            ><button data-filter="Complete">Complete</button>
+          </div>
+          <label class="search"
+            ><span class="sr-only">Search jobs</span
+            ><input
+              id="search"
+              type="search"
+              placeholder="Search clients or jobs…"
+          /></label>
+        </div>
+        <div class="table-head">
+          <span>PROJECT / CLIENT</span><span>SERVICE</span><span>STATUS</span
+          ><span>NEXT DATE</span>
+        </div>
+        <div id="jobs"></div>
+        <p class="empty" id="empty" hidden>
+          No jobs match. Try another filter or start a new job.
+        </p>
+      </section>
+      <p class="footer-note" id="footer-note">
+        Browser preview · Changes stay on this device. The desktop app stores a
+        local file and works offline.
+      </p>
+      <p id="status" role="status"></p>
+    </main>
+    <dialog id="job-dialog" aria-labelledby="dialog-title">
+      <form id="job-form">
+        <div class="dialog-head">
+          <h2 id="dialog-title">A new beginning.</h2>
+          <button type="button" id="close" aria-label="Close job editor">
+            ×
+          </button>
+        </div>
+        <label
+          >Project name<input name="title" maxlength="140" required /></label
+        ><label
+          >Client name<input name="client" maxlength="140" required
+        /></label>
+        <div class="two">
+          <label
+            >Service<select name="service">
+              <option>Design</option>
+              <option>Care</option>
+              <option>Planting</option>
+            </select></label
+          ><label
+            >Status<select name="status">
+              <option>New</option>
+              <option>Scheduled</option>
+              <option>In progress</option>
+              <option>Complete</option>
+            </select></label
+          >
+        </div>
+        <label
+          >Next date or action<input
+            name="due"
+            required
+            maxlength="140"
+            placeholder="e.g. Review on Friday" /></label
+        ><label
+          >Project notes<textarea
+            name="notes"
+            maxlength="2000"
+            rows="4"
+          ></textarea>
+        </label>
+        <p id="form-error" role="alert"></p>
+        <div class="dialog-actions">
+          <button type="submit" class="primary">Save job ↗</button
+          ><button type="button" id="delete" class="quiet danger">
+            Delete job
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
