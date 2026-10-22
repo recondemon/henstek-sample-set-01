@@ -12,6 +12,6 @@ Use **Sample Set 01 — Cedar & Fern** in customer conversations. Reference an i
 
 New alternate scenarios or substantially different visual directions get Set 02, Set 03 and subsequent numbers. Improvements to an existing set stay within that set and are tracked by Git commit or release version. A set number is not a software version or quality certification.
 
-When adding a set, add a guide in `sets/set-NN/`, list its source paths, runnable demos, actual platform support, customization points and license, then add it to this index and the public catalog. Keep existing source/demo links working. Do not list unfinished sets as available.
+Each future set gets its own repository named `henstek-sample-set-NN`, with its website/mobile/desktop sources and setup guides. Add the set to [HensTek’s public gallery](https://henstek.dev/samples) and inquiry choices when it is ready. Keep the existing set identifiers stable, and do not list unfinished sets as available.
 
-The first set's existing source paths are retained for link compatibility. Later sets can keep their sources under `samples/set-NN/<platform>/`; the set guide provides the authoritative mapping.
+This repository contains Set 01. Its source paths are mapped in the [set guide](set-01/README.md).

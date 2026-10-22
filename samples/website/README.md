@@ -4,7 +4,7 @@ Part of **[Sample Set 01 — Cedar & Fern](../../sets/set-01/README.md)**.
 
 A responsive, single-page website with five sections: Home, Services, Studio, FAQ and Contact. The garden studio, copy and records are fictional.
 
-[Try the demo](https://recondemon.github.io/henstek-samples/web/)
+[Try the demo](https://recondemon.github.io/henstek-sample-set-01/web/)
 
 ## Walkthrough
 

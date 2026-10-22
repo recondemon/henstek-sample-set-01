@@ -1,18 +1,18 @@
-# HensTek samples
+# HensTek Sample Set 01 — Cedar & Fern
 
 Working examples you can explore, run and adapt. **Sample Set 01 — Cedar & Fern** is the first set: a fictional garden studio across an independent service website, iPhone visit planner and desktop job board.
 
 [Sample Set 01 guide](sets/set-01/README.md) · [Set index and naming](sets/README.md)
 
-Future alternate designs will be published as separately numbered sets. The set number identifies the scenario and design; source revisions are tracked separately by Git commit.
+Future alternate designs will have their own numbered repositories, listed at [HensTek’s sample gallery](https://henstek.dev/samples). The set number identifies the scenario and design; source revisions are tracked separately by Git commit.
 
-[Explore the collection](https://recondemon.github.io/henstek-samples/) · [Discuss a commissioned build](https://henstek.dev/start?project=website)
+[Explore the collection](https://recondemon.github.io/henstek-sample-set-01/) · [Discuss a commissioned build](https://henstek.dev/start?sample=set-01)
 
 | Sample | What you can try | Source and setup |
 | --- | --- | --- |
-| **Cedar & Fern website** | Responsive service site, content preview/save/undo, JSON content import/export, inquiry review | [Website guide](samples/website/README.md) · [Live demo](https://recondemon.github.io/henstek-samples/web/) |
+| **Cedar & Fern website** | Responsive service site, content preview/save/undo, JSON content import/export, inquiry review | [Website guide](samples/website/README.md) · [Live demo](https://recondemon.github.io/henstek-sample-set-01/web/) |
 | **Field Notes for iPhone** | Visits, checklist, notes, completion, local persistence, JSON import/export | [iPhone guide](samples/mobile/README.md) |
-| **Studio Board for desktop** | Jobs, search, status filters, editing, local file storage, portable exports | [Desktop guide](samples/desktop/README.md) · [Browser preview](https://recondemon.github.io/henstek-samples/desktop/) |
+| **Studio Board for desktop** | Jobs, search, status filters, editing, local file storage, portable exports | [Desktop guide](samples/desktop/README.md) · [Browser preview](https://recondemon.github.io/henstek-sample-set-01/desktop/) |
 
 These examples demonstrate interface design, state management, validation, persistence, recovery and handoff. Each can be used on its own; they do **not** sync with each other. All records are fictional. There are no connected customer accounts, payments, messages or cloud databases.
 
@@ -23,8 +23,8 @@ These examples demonstrate interface design, state management, validation, persi
 Use Node.js **22.12 or newer** (a current LTS release is recommended).
 
 ```sh
-git clone https://github.com/recondemon/henstek-samples.git
-cd henstek-samples
+git clone https://github.com/recondemon/henstek-sample-set-01.git
+cd henstek-sample-set-01
 npm ci
 npm run dev
 ```
