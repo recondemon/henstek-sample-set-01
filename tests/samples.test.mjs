@@ -163,7 +163,30 @@ test("public site assets resolve and browser demos contain no network submission
   }
 });
 
-test('published import fixtures match their sample schemas', async () => {
-  assert.deepEqual(validateContent(JSON.parse(await readFile('fixtures/website-content.json', 'utf8'))), defaults);
-  assert.deepEqual(validate(JSON.parse(await readFile('fixtures/desktop-jobs.json', 'utf8'))), seed);
+test("published import fixtures match their sample schemas", async () => {
+  assert.deepEqual(
+    validateContent(
+      JSON.parse(await readFile("fixtures/website-content.json", "utf8")),
+    ),
+    defaults,
+  );
+  assert.deepEqual(
+    validate(JSON.parse(await readFile("fixtures/desktop-jobs.json", "utf8"))),
+    seed,
+  );
+});
+
+test("native bridge accepts only the app page, including accessible section anchors", () => {
+  const { isAppPage } = require("../samples/desktop/security.cjs");
+  assert.equal(isAppPage("studio://app/index.html"), true);
+  assert.equal(isAppPage("studio://app/index.html#main"), true);
+  for (const url of [
+    "https://app/index.html",
+    "studio://elsewhere/index.html",
+    "studio://app/other.html",
+    "studio://person@app/index.html",
+    "studio://app/index.html?next=other",
+    "invalid",
+  ])
+    assert.equal(isAppPage(url), false);
 });

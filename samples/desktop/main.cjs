@@ -12,6 +12,7 @@ const { join } = require("node:path");
 const { pathToFileURL } = require("node:url");
 const { writeFile } = require("node:fs/promises");
 const { Store } = require("./store.cjs");
+const { isAppPage } = require("./security.cjs");
 protocol.registerSchemesAsPrivileged([
   {
     scheme: "studio",
@@ -40,7 +41,8 @@ app.whenReady().then(() => {
     if (
       !window ||
       event.sender !== window.webContents ||
-      event.senderFrame.url !== "studio://app/index.html"
+      event.senderFrame !== window.webContents.mainFrame ||
+      !isAppPage(event.senderFrame.url)
     )
       throw Error("Untrusted request.");
   }
@@ -83,7 +85,7 @@ app.whenReady().then(() => {
     });
     window.webContents.setWindowOpenHandler(() => ({ action: "deny" }));
     window.webContents.on("will-navigate", (event, url) => {
-      if (url !== "studio://app/index.html") event.preventDefault();
+      if (!isAppPage(url)) event.preventDefault();
     });
     window.webContents.on("will-attach-webview", (event) =>
       event.preventDefault(),

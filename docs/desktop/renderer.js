@@ -4,6 +4,7 @@ let state = structuredClone(seed),
   filter = "All",
   editing = null;
 const native = !!window.studioStore;
+if (native) document.querySelector(".brand").href = "#main";
 function status(message) {
   $("#status").textContent = message;
 }
