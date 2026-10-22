@@ -147,7 +147,7 @@ struct FieldHome: View {
               "\(visit.title), \(visit.client), \(visit.complete ? "complete" : "planned")")
           }
           VStack(alignment: .leading, spacing: 8) {
-            Text("A HensTek sample").font(.caption.bold())
+            Text("HensTek · Sample Set 01").font(.caption.bold())
             Text(
               "Fictional visits. No account, cloud sync or customer messaging. Your edits stay on this device until you export them."
             ).font(.caption).foregroundStyle(.secondary)

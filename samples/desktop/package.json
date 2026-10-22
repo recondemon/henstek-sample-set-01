@@ -2,7 +2,7 @@
   "name": "cedar-fern-studio",
   "version": "1.0.0",
   "private": true,
-  "description": "An offline fictional service-business job board.",
+  "description": "Sample Set 01 \u2014 Cedar & Fern. An offline fictional service-business job board.",
   "main": "main.cjs",
   "scripts": {
     "start": "electron .",

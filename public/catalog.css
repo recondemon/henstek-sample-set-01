@@ -106,7 +106,8 @@ h1 em {
 .tag {
   color: var(--lime);
 }
-h2 {
+h2,
+h3 {
   font-weight: 450;
   font-size: 33px;
   letter-spacing: -1.2px;
@@ -214,4 +215,28 @@ footer {
   .note {
     padding: 40px 0;
   }
+}
+
+.sample-set {
+  scroll-margin-top: 24px;
+}
+.set-heading {
+  margin-bottom: 26px;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+.set-heading h2 {
+  font-size: 36px;
+  margin: 8px 0;
+  letter-spacing: -1px;
+}
+.set-heading p:not(.eyebrow) {
+  max-width: 540px;
+  color: var(--muted);
+}
+.set-heading a {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--lime);
+  border-bottom: 1px solid var(--line);
 }

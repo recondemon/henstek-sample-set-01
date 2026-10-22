@@ -1,5 +1,7 @@
 # Field Notes — native iPhone sample
 
+Part of **[Sample Set 01 — Cedar & Fern](../../sets/set-01/README.md)**.
+
 A SwiftUI visit planner for the fictional Cedar & Fern studio. Add visits, tick a care checklist, edit notes, mark work complete, filter the list and export or import a portable JSON archive. It works offline without an account.
 
 ![Field Notes in the iPhone simulator](../../screenshots/iphone-native.png)

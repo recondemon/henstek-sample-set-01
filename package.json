@@ -2,7 +2,7 @@
   "name": "henstek-samples",
   "version": "1.0.0",
   "private": true,
-  "description": "Independent website, mobile and desktop samples by HensTek.",
+  "description": "Sample Set 01 \u2014 Cedar & Fern. Independent website, mobile and desktop samples by HensTek.",
   "scripts": {
     "build": "node scripts/build.mjs",
     "dev": "node scripts/serve.mjs",

@@ -1,5 +1,7 @@
 # Using the samples with a client
 
+The current collection is **Sample Set 01 — Cedar & Fern**. Record the set number, platform and source revision in the customer brief so future alternate designs are unambiguous.
+
 Start with the customer's outcome, audience and current process. Show only the sample that fits the conversation. These are fictional examples, not completed client commissions or promised production features.
 
 | Customer need | Show | Let them try | Decisions for their project |

@@ -1,6 +1,10 @@
 # HensTek samples
 
-Working examples you can explore, run and adapt. **Cedar & Fern** is a fictional garden studio used across three independent samples: a service website, an iPhone visit planner, and a desktop job board.
+Working examples you can explore, run and adapt. **Sample Set 01 — Cedar & Fern** is the first set: a fictional garden studio across an independent service website, iPhone visit planner and desktop job board.
+
+[Sample Set 01 guide](sets/set-01/README.md) · [Set index and naming](sets/README.md)
+
+Future alternate designs will be published as separately numbered sets. The set number identifies the scenario and design; source revisions are tracked separately by Git commit.
 
 [Explore the collection](https://recondemon.github.io/henstek-samples/) · [Discuss a commissioned build](https://henstek.dev/start?project=website)
 
@@ -47,6 +51,7 @@ The Node suite checks content and inquiry validation, import rejection, desktop 
 
 ## Repository layout
 
+- `sets/` — numbered set guides and catalog conventions
 - `samples/website/` — original website source and illustration
 - `samples/mobile/` — SwiftUI iPhone project, no external packages
 - `samples/desktop/` — Electron app and shared browser renderer
