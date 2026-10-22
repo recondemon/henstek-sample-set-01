@@ -4,7 +4,7 @@ Checked on October 22, 2026. These are focused sample checks, not a complete pro
 
 | Area | Result |
 | --- | --- |
-| Node model suite | 7 tests pass: website content/inquiry validation, browser storage fallback, desktop archive validation, serialized saves/restart, previous-revision preservation, corrupt-file protection, generated asset paths and local-only renderer checks |
+| Node model suite | 8 tests pass: website content/inquiry validation, browser storage fallback, desktop archive validation, serialized saves/restart, previous-revision preservation, corrupt-file protection, generated asset paths local-only renderer checks and public import fixtures |
 | Swift model checks | Archive round trip, unsupported version, duplicate IDs, invalid fields/checklists, size limit, cold load, saved changes, previous revision and corrupt-file preservation pass |
 | iPhone build | Xcode 26.2 simulator Debug build succeeds, iOS 17 deployment target, no signing or external packages |
 | Desktop build | Electron 45.0.0, unsigned Apple silicon macOS packaging succeeds |

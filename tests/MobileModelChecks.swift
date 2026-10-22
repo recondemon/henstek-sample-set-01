@@ -4,6 +4,8 @@ import Foundation
  static func main() throws {
   func check(_ value: Bool, _ message: String) { precondition(value, message) }
   func rejects(_ work: () throws -> Void) { do { try work(); fatalError("Invalid archive accepted") } catch {} }
+  let fixture = try VisitArchive.decode(Data(contentsOf: URL(fileURLWithPath: "fixtures/iphone-visits.json")))
+  check(fixture.visits.count == 3, "Public fixture must contain valid fictional visits")
   let seed = VisitArchive(visits: Visit.examples)
   let roundTrip = try VisitArchive.decode(seed.encoded())
   check(roundTrip == seed, "Round trip loses records")
