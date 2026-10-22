@@ -35,12 +35,14 @@ struct VisitArchive: Codable, Equatable {
     }
     func encoded() throws -> Data {
         let encoder = JSONEncoder(); encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-        return try encoder.encode(validated())
+        let data = try encoder.encode(validated())
+        guard data.count <= 500_000 else { throw VisitError.invalid }
+        return data
     }
 }
 enum VisitError: LocalizedError {
     case invalid
-    var errorDescription: String? { "Choose a valid Field Notes version 1 export (up to 500 visits). Names and titles are required; notes can contain up to 2,000 characters." }
+    var errorDescription: String? { "Choose a valid Field Notes version 1 export (up to 500 visits and 500 KB). Names and titles are required; notes can contain up to 2,000 characters." }
 }
 struct VisitDisk {
     let directory: URL

@@ -36,6 +36,8 @@ Start with the four fictional jobs. Open one, change its status or notes and sav
 
 The renderer has no Node access. Context isolation and sandboxing are enabled. The main process restricts native calls to the app's own top-level page, serves only an asset allowlist, and rejects permission requests, new windows and external navigation. The preload exposes only load, save and export. Keep those boundaries when adding integrations.
 
+Archives are limited to 500 jobs and 500 KB, including formatting. Oversized saves and imports are rejected before replacing saved data.
+
 ## Storage and recovery
 
 The native files are in Electron's `userData` folder for **Cedar Fern Studio** (typically `~/Library/Application Support/Cedar Fern Studio/` on macOS). `jobs.json` is the current state; `jobs.previous.json` is the previous save. Export copies independently; the previous file is a single revision, not a backup history. Exports are unencrypted.

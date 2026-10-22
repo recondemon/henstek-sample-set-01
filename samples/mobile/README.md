@@ -27,6 +27,8 @@ Open a visit, edit a checklist and note, and save. Create another visit. Switch 
 
 `Visit.swift` contains the model, synthetic records, archive validation and atomic file storage. `CedarFieldNotesApp.swift` contains the views and store. Customize the checklist carefully: version 1 archives require exactly three checklist values. A changed schema needs a migration and new archive version.
 
+Archives are limited to 500 records and 500 KB, including formatting. Oversized saves and imports are rejected before replacing saved data.
+
 ## Data and recovery
 
 Data stays in `Documents/FieldNotes/visits.json` inside this app's sandbox. The preceding save is kept as `visits.previous.json`. These files are available through the app's Files folder; the previous revision is not a full backup history. Use exported copies for independent backups.

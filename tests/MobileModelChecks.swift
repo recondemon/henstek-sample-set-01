@@ -14,6 +14,8 @@ import Foundation
   var bad = Visit.examples[0]; bad.title = " "; rejects { _ = try VisitArchive(visits: [bad]).validated() }
   bad = Visit.examples[0]; bad.checks = []; rejects { _ = try VisitArchive(visits: [bad]).validated() }
   rejects { _ = try VisitArchive.decode(Data(repeating: 32, count: 500_001)) }
+  let large = VisitArchive(visits: (0..<500).map { _ in var visit = Visit.examples[0]; visit.id = UUID(); visit.notes = String(repeating: "x", count: 2000); return visit })
+  rejects { _ = try large.encoded() }
   let directory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
   defer { try? FileManager.default.removeItem(at: directory) }
   let disk = VisitDisk(directory: directory)

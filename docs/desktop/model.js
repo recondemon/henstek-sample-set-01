@@ -54,7 +54,7 @@
         "Choose a Studio Board version 1 export with at most 500 jobs.",
       );
     const ids = new Set();
-    return {
+    const clean = {
       version: 1,
       jobs: value.jobs.map((j) => {
         if (
@@ -80,6 +80,13 @@
         return result;
       }),
     };
+    if (
+      new TextEncoder().encode(JSON.stringify(clean, null, 2)).length > 500000
+    )
+      throw Error(
+        "Archive exceeds 500 KB. Export and reduce the number or size of jobs before saving.",
+      );
+    return clean;
   }
   const api = { statuses, seed, validate };
   if (typeof module !== "undefined") module.exports = api;

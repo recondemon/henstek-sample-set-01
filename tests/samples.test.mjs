@@ -85,6 +85,18 @@ test("inquiries validate email, length and permitted services without sending", 
 });
 test("desktop imports reject duplicate IDs, unsupported formats and invalid job fields", () => {
   assert.deepEqual(validate(seed), seed);
+  assert.throws(
+    () =>
+      validate({
+        version: 1,
+        jobs: Array.from({ length: 500 }, (_, i) => ({
+          ...seed.jobs[0],
+          id: `large-${i}`,
+          notes: "x".repeat(2000),
+        })),
+      }),
+    /500 KB/,
+  );
   for (const data of [
     { ...seed, version: 2 },
     { version: 1, jobs: [seed.jobs[0], seed.jobs[0]] },

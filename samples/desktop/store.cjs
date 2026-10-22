@@ -17,7 +17,7 @@ class Store {
   async load() {
     try {
       const data = await readFile(this.file, "utf8");
-      if (data.length > 500000)
+      if (Buffer.byteLength(data, "utf8") > 500000)
         throw Error("Saved file exceeds the supported size.");
       return validate(JSON.parse(data));
     } catch (e) {
