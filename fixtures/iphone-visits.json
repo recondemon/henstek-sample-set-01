@@ -1,0 +1,44 @@
+{
+  "version" : 1,
+  "visits" : [
+    {
+      "checks" : [
+        true,
+        false,
+        false
+      ],
+      "client" : "Rowan House",
+      "complete" : false,
+      "date" : 814320000,
+      "id" : "00000000-0000-4000-8000-000000000001",
+      "notes" : "Fictional visit. Check the shaded seating corner and planting palette.",
+      "title" : "Courtyard planting"
+    },
+    {
+      "checks" : [
+        false,
+        false,
+        false
+      ],
+      "client" : "The Maple Courtyard",
+      "complete" : false,
+      "date" : 814406400,
+      "id" : "00000000-0000-4000-8000-000000000002",
+      "notes" : "Fictional visit. Mulch, tidy and leave watering notes.",
+      "title" : "Seasonal garden care"
+    },
+    {
+      "checks" : [
+        true,
+        true,
+        true
+      ],
+      "client" : "Alder Apartment",
+      "complete" : true,
+      "date" : 814492800,
+      "id" : "00000000-0000-4000-8000-000000000003",
+      "notes" : "Fictional visit. Three containers selected for afternoon sun.",
+      "title" : "Balcony consultation"
+    }
+  ]
+}

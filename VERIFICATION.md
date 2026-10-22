@@ -9,8 +9,10 @@ Checked on October 22, 2026. These are focused sample checks, not a complete pro
 | iPhone build | Xcode 26.2 simulator Debug build succeeds, iOS 17 deployment target, no signing or external packages |
 | Desktop build | Electron 45.0.0, unsigned Apple silicon macOS packaging succeeds |
 | Dependency audit | Desktop install reports zero known npm audit findings at the checked lockfile; repeat after dependency updates |
-| Website browser flow | Chrome: editor preview/save/reload/undo, inquiry review, 390px navigation and horizontal layout checks pass |
-| Desktop browser preview | Chrome: create job, save/reload, search and validated archive import with replacement confirmation pass |
+| Website browser flow | Chrome: editor preview/save/reload/undo, inquiry review, 390px navigation and horizontal layout checks, Tab focus and Escape dialog closure pass |
+| Desktop browser preview | Chrome: create job, save/reload, search and validated archive import with replacement confirmation and exported JSON validation pass |
+
+A fresh clone installs, builds the browser site without output drift, passes the Node suite, and installs/audits the desktop dependencies successfully. GitHub Actions also passes the clean Node and macOS Swift/Xcode jobs.
 
 Native iPhone and macOS visual/interaction checks are pending completion. Physical iPhone, Android, iPad, Windows and Linux checks, assistive-technology audits, app-store submission, signed installers and automatic updates are not included. The iPhone app is native SwiftUI; no Android app is present.
 

@@ -162,3 +162,8 @@ test("public site assets resolve and browser demos contain no network submission
     assert.doesNotMatch(code, /innerHTML|fetch\(|XMLHttpRequest|sendBeacon/);
   }
 });
+
+test('published import fixtures match their sample schemas', async () => {
+  assert.deepEqual(validateContent(JSON.parse(await readFile('fixtures/website-content.json', 'utf8'))), defaults);
+  assert.deepEqual(validate(JSON.parse(await readFile('fixtures/desktop-jobs.json', 'utf8'))), seed);
+});

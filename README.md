@@ -53,6 +53,7 @@ The Node suite checks content and inquiry validation, import rejection, desktop 
 - `public/` — collection landing page
 - `scripts/` — dependency-free build and local server
 - `docs/` — generated GitHub Pages site; edit source then rebuild
+- `fixtures/` — fictional import files for all three samples
 - `tests/` — data and recovery checks
 
 Contributions: [CONTRIBUTING.md](CONTRIBUTING.md). Security reports: [SECURITY.md](SECURITY.md).

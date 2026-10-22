@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "garden-one",
+      "client": "Rowan House",
+      "title": "Courtyard planting plan",
+      "service": "Design",
+      "status": "In progress",
+      "due": "This week",
+      "notes": "Fictional project. Review the planting palette and shaded seating corner."
+    },
+    {
+      "id": "garden-two",
+      "client": "The Maple Courtyard",
+      "title": "Autumn garden visit",
+      "service": "Care",
+      "status": "Scheduled",
+      "due": "Next week",
+      "notes": "Fictional project. Seasonal tidy, mulch and a care note."
+    },
+    {
+      "id": "garden-three",
+      "client": "Alder Apartment",
+      "title": "Balcony consultation",
+      "service": "Planting",
+      "status": "New",
+      "due": "To agree",
+      "notes": "Fictional project. Three containers and an afternoon-sun planting plan."
+    },
+    {
+      "id": "garden-four",
+      "client": "Fern Cottage",
+      "title": "Front path refresh",
+      "service": "Design",
+      "status": "Complete",
+      "due": "Delivered",
+      "notes": "Fictional project. Handoff notes supplied."
+    }
+  ]
+}
