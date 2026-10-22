@@ -2,6 +2,8 @@
 
 A SwiftUI visit planner for the fictional Cedar & Fern studio. Add visits, tick a care checklist, edit notes, mark work complete, filter the list and export or import a portable JSON archive. It works offline without an account.
 
+![Field Notes in the iPhone simulator](../../screenshots/iphone-native.png)
+
 ## Run
 
 Requires macOS and Xcode with an iOS SDK. The deployment target is iOS 17 or newer. There are no external packages or service credentials.
@@ -23,7 +25,7 @@ Run these commands from the repository root.
 
 ## Try it
 
-Open a visit, edit a checklist and note, and save. Create another visit. Switch Upcoming / Complete / All. Close and relaunch to check that your changes persist. Use **Data options → Export visits** to share JSON through the system share sheet. Import validates the archive and asks before replacing all visits. Export before reset, import, delete or uninstall if you need a copy.
+Open a visit, edit a checklist and note, and save. Create another visit. Switch Upcoming / Complete / All. Close and relaunch to check that your changes persist. Use **Data options → Export visits** to share JSON through the system share sheet. Import validates the archive and shows a Review import panel with the current and imported visit counts. Choose Cancel import to keep current data, or Replace visits to apply it. Export before reset, import, delete or uninstall if you need a copy.
 
 `Visit.swift` contains the model, synthetic records, archive validation and atomic file storage. `CedarFieldNotesApp.swift` contains the views and store. Customize the checklist carefully: version 1 archives require exactly three checklist values. A changed schema needs a migration and new archive version.
 

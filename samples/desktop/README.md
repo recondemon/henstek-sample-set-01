@@ -2,7 +2,7 @@
 
 A local job board for the fictional Cedar & Fern studio. Create and edit jobs, track status, search, filter, export and import. The desktop app uses a local JSON file; the [browser preview](https://recondemon.github.io/henstek-samples/desktop/) uses browser storage instead. Neither syncs to a server or another sample.
 
-![Studio Board browser preview](../../screenshots/desktop-preview.png)
+![Studio Board native macOS app](../../screenshots/desktop-native.png)
 
 ## Run
 
