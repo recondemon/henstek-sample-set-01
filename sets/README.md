@@ -5,7 +5,7 @@ Each numbered set is a distinct scenario and design direction with its own guide
 | Set | Scenario and design | Examples |
 | --- | --- | --- |
 | **[Sample Set 01](set-01/README.md)** | Cedar & Fern — Fieldwork, forest ink and warm paper | Website, native iPhone, Electron desktop/browser preview |
-| **[Sample Set 02](https://github.com/recondemon/henstek-sample-set-02)** | Side A — Night Shift, ink black, ivory and vermilion | Website, native iPhone, Electron desktop/browser preview |
+| **[Sample Set 02](https://github.com/recondemon/henstek-sample-set-02)** | Side A — Night Shift, paper cream, tomato red and cobalt posters | Website, native iPhone, Electron desktop/browser preview |
 
 ## Naming and references
 
