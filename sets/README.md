@@ -18,3 +18,9 @@ New alternate scenarios or substantially different visual directions get Set 02,
 Each future set gets its own repository named `henstek-sample-set-NN`, with its website/mobile/desktop sources and setup guides. Add the set to [HensTek’s public gallery](https://henstek.dev/samples) and inquiry choices when it is ready. Keep the existing set identifiers stable, and do not list unfinished sets as available.
 
 This repository contains Set 01. Its source paths are mapped in the [set guide](set-01/README.md).
+
+## Sample Set 03 — Stillwater
+
+A personal nature journal. Quiet Atlas uses cool blue, sage, lavender and original landscape illustrations across web, native iPhone and desktop. Reference SW-03 / Web, SW-03 / Mobile or SW-03 / Desktop.
+
+[Live collection](https://recondemon.github.io/henstek-sample-set-03/) · [Public source](https://github.com/recondemon/henstek-sample-set-03)
