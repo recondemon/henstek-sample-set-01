@@ -364,41 +364,6 @@ h3 {
   place-items: center;
   border-radius: 4px;
 }
-.arch {
-  position: relative;
-  background: #eee7d5;
-  width: 62%;
-  height: 75%;
-  border-radius: 160px 160px 0 0;
-  overflow: hidden;
-}
-.plant {
-  position: absolute;
-  background: #5d7550;
-  height: 185px;
-  width: 66px;
-  border-radius: 90% 0;
-  bottom: 88px;
-  left: 50%;
-  transform: rotate(-24deg);
-  transform-origin: bottom;
-}
-.stem-two {
-  background: #8c9f68;
-  transform: rotate(29deg);
-  height: 230px;
-  left: 34%;
-  bottom: 80px;
-}
-.pot {
-  position: absolute;
-  bottom: 24px;
-  left: 28%;
-  background: #b97b5a;
-  width: 46%;
-  height: 100px;
-  border-radius: 2px 2px 25px 25px;
-}
 .about-label {
   position: absolute;
   bottom: 17px;
@@ -1061,21 +1026,6 @@ dialog dd {
   border-radius:0;
   overflow:hidden;
 }
-.about-art::before {
-  content:"CF / FIELD STUDY 01";
-  position:absolute;
-  top:22px;
-  left:24px;
-  color:#c6e98d;
-  font:10px monospace;
-  letter-spacing:.15em;
-}
-.about-art .arch {
-  background:#a9b38c;
-  border-radius:0;
-  transform:rotate(-6deg);
-  height:65%;
-}
 .about-label {
   color:#bdd0af;
 }
@@ -1113,4 +1063,31 @@ dialog dd {
   .service-grid h3 {
     font-size:25px;
   }
+}
+
+/* Botanical identity and garden studies. */
+.brand-mark {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+.studio-seal { width: 40px; height: 40px; object-fit: contain; }
+.hero-art { padding: 0; border: 0; background: transparent; }
+.hero-art img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.art-note { padding: 16px 0 0; border: 0; gap: 12px; }
+.art-note span:first-child { font-family: monospace; font-size: 9px; letter-spacing: .12em; }
+.art-note span:last-child { font-style: normal; font-size: 11px; }
+.about-photo { margin: 0; min-width: 0; }
+.about-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 39% center; }
+.about-photo figcaption { margin-top: 17px; color: var(--muted); font-size: 11px; }
+.service-grid article .number { display: block; margin-bottom: 48px; }
+@media (max-width: 700px) {
+  .brand-mark { width: 42px; height: 42px; }
+  .hero-art { max-width: none; }
+  .about-photo img { aspect-ratio: 4 / 3; }
+  .art-note span:last-child { display: block; }
 }

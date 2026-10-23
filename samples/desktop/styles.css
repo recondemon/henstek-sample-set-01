@@ -659,3 +659,7 @@ h1 {
 .job {
   border-color:var(--line);
 }
+
+.brand-mark { width: 42px; height: 42px; object-fit: contain; flex-shrink: 0; filter: brightness(0) saturate(100%) invert(91%) sepia(18%) saturate(626%) hue-rotate(30deg) brightness(99%); }
+.avatar { display: grid; place-items: center; }
+.avatar img { display: block; filter: brightness(0) invert(1); opacity: .8; }

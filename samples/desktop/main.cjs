@@ -28,7 +28,7 @@ app.whenReady().then(() => {
       name = url.pathname.slice(1);
     if (
       url.hostname !== "app" ||
-      !["index.html", "styles.css", "renderer.js", "model.js"].includes(name)
+      !["index.html", "styles.css", "renderer.js", "model.js", "assets/cedar-fern-mark.png"].includes(name)
     )
       return new Response("Not found", { status: 404 });
     return net.fetch(pathToFileURL(join(__dirname, name)).toString());

@@ -11,10 +11,8 @@ for (const name of ["index.html", "styles.css", "app.js", "content.mjs"])
     resolve(root, "samples/website", name),
     resolve(root, "docs/web", name),
   );
-await copyFile(
-  resolve(root, "samples/website/assets/garden.svg"),
-  resolve(root, "docs/web/assets/garden.svg"),
-);
+await cp(resolve(root, "samples/website/assets"), resolve(root, "docs/web/assets"), { recursive: true });
+await cp(resolve(root, "samples/desktop/assets"), resolve(root, "docs/desktop/assets"), { recursive: true });
 for (const name of ["index.html", "styles.css", "renderer.js", "model.js"])
   await copyFile(
     resolve(root, "samples/desktop", name),

@@ -14,7 +14,7 @@ Future alternate designs will have their own numbered repositories, listed at [H
 | **CF-01 / Mobile — Field Notes** | Visits, checklist, notes, completion, local persistence, JSON import/export | [iPhone guide](samples/mobile/README.md) |
 | **CF-01 / Desktop — Studio Board** | Jobs, search, status filters, editing, local file storage, portable exports | [Desktop guide](samples/desktop/README.md) · [Browser preview](https://recondemon.github.io/henstek-sample-set-01/desktop/) |
 
-**Fieldwork** is the shared visual direction: forest ink, warm paper, lime details and an original courtyard plan. Choose workflow and style separately in a [mixed brief](https://henstek.dev/start?sample=set-01-iphone&style=cf-01-web).
+**Fieldwork** is the shared visual direction: forest ink, warm paper, lime details, a botanical emblem and textured garden scenes. Choose workflow and style separately in a [mixed brief](https://henstek.dev/start?sample=set-01-iphone&style=cf-01-web).
 
 These examples demonstrate interface design, state management, validation, persistence, recovery and handoff. Each can be used on its own; they do **not** sync with each other. All records are fictional. There are no connected customer accounts, payments, messages or cloud databases.
 
@@ -37,7 +37,7 @@ The iPhone app needs macOS and Xcode. The desktop app has its own dependency ins
 
 ## Reuse and customize
 
-Start with the sample closest to your workflow, change its fictional branding and example records, and add only the integrations you need. The code and original courtyard illustration are [MIT licensed](LICENSE); keep the copyright and license notice when redistributing. Third-party dependencies retain their own licenses. The license does not grant an endorsement or permission to present HensTek as your business.
+Start with the sample closest to your workflow, change its fictional branding and example records, and add only the integrations you need. The code and included sample assets are [MIT licensed](LICENSE); keep the copyright and license notice when redistributing. Third-party dependencies retain their own licenses. The license does not grant an endorsement or permission to present HensTek as your business.
 
 For a commissioned version, we agree the deliverables, publishing/editing access, data handling, hosting, integrations, support and handoff before work begins. [The sample walkthrough](CUSTOMER-WALKTHROUGH.md) explains the choices a client can make. A public example is not a fixed-price quote or a claim that a production integration is included.
 
@@ -54,7 +54,7 @@ The Node suite checks content and inquiry validation, import rejection, desktop 
 ## Repository layout
 
 - `sets/` — numbered set guides and catalog conventions
-- `samples/website/` — original website source and illustration
+- `samples/website/` — website source and brand assets
 - `samples/mobile/` — SwiftUI iPhone project, no external packages
 - `samples/desktop/` — Electron app and shared browser renderer
 - `public/` — collection landing page

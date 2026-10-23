@@ -80,7 +80,8 @@ struct FieldHome: View {
       ScrollView {
         VStack(alignment: .leading, spacing: 24) {
           HStack {
-            Text("C/F").font(.system(.caption, design: .monospaced).bold())
+            Image("CedarMark").renderingMode(.template).resizable().scaledToFit()
+              .frame(width: 34, height: 34).foregroundStyle(green).accessibilityHidden(true)
             Text("CEDAR & FERN").tracking(3).font(.caption.weight(.semibold))
             Spacer()
             Text("CF-01 / MOBILE").font(.caption2.weight(.bold)).padding(8).background(

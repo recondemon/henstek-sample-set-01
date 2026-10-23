@@ -12,7 +12,7 @@
       content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
     <title>Cedar & Fern · A HensTek website sample</title>
-    <link rel="icon" href="assets/garden.svg" type="image/svg+xml" />
+    <link rel="icon" href="assets/cedar-fern-mark.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="app.js"></script>
   </head>
@@ -25,8 +25,7 @@
     </div>
     <header class="header wrap">
       <a class="brand" href="#home" aria-label="Cedar and Fern home"
-        ><span class="brand-mark" aria-hidden="true">C/F</span
-        ><span data-content="name">Cedar & Fern</span></a
+        ><img class="brand-mark" src="assets/cedar-fern-mark.png" alt="" width="48" height="48" /><span data-content="name">Cedar & Fern</span></a
       ><button
         class="mobile-toggle"
         id="menu-toggle"
@@ -56,7 +55,7 @@
             >Find your starting point <span>↗</span></a
           >
           <div class="hero-foot">
-            <span class="tiny-flower" aria-hidden="true">C/F</span>
+            <img class="studio-seal" src="assets/cedar-fern-mark.png" alt="" width="40" height="40" />
             <p>
               Spaces that feel like you.<br /><span
                 >Made for the way you live.</span
@@ -66,15 +65,13 @@
         </div>
         <div class="hero-art">
           <img
-            src="assets/garden.svg"
-            alt="Measured courtyard plan with planting beds, a gathering table and shaded seating"
+            src="assets/courtyard.webp"
+            alt="A quiet planted courtyard with a cedar bench, stone path, ferns and a Japanese maple"
+            width="1120" height="1400" fetchpriority="high"
           />
           <div class="art-note">
-            <span>CF-01 / FIELDWORK</span
-            ><span>A place for the everyday.</span>
-          </div>
-          <div class="stamp" aria-hidden="true">
-            ROOTED IN<br />THE EVERYDAY<span>↘</span>
+            <span>THE COURTYARD</span
+            ><span>Shade. Texture. A little stillness.</span>
           </div>
         </div>
       </section>
@@ -93,7 +90,6 @@
           <div class="service-grid">
             <article>
               <span class="number">01</span>
-              <div class="service-symbol" aria-hidden="true">◒</div>
               <h3 data-content="service1">Garden design</h3>
               <p>
                 A considered plan for paths, planting and the places you’ll want
@@ -105,7 +101,6 @@
             </article>
             <article>
               <span class="number">02</span>
-              <div class="service-symbol" aria-hidden="true">✳</div>
               <h3 data-content="service2">Seasonal care</h3>
               <p>
                 Thoughtful tending that helps an established garden find its
@@ -117,7 +112,6 @@
             </article>
             <article>
               <span class="number">03</span>
-              <div class="service-symbol" aria-hidden="true">◐</div>
               <h3 data-content="service3">Small-space planting</h3>
               <p>
                 A balcony, a doorstep, a sunny corner. Small spaces can make a
@@ -131,13 +125,10 @@
         </div>
       </section>
       <section id="about" class="about wrap">
-        <div class="about-art" aria-hidden="true">
-          <div class="arch">
-            <span class="plant stem-one"></span
-            ><span class="plant stem-two"></span><span class="pot"></span>
-          </div>
-          <span class="about-label">A STUDIO WITH ROOM TO LISTEN</span>
-        </div>
+        <figure class="about-photo">
+          <img src="assets/planting-detail.webp" alt="Fern fronds and ornamental grass beside weathered cedar and a textured stone path" width="1200" height="900" loading="lazy" />
+          <figcaption>Good spaces are made in the details.</figcaption>
+        </figure>
         <div>
           <p class="eyebrow">02 / THE WAY WE WORK</p>
           <h2>Less overwhelm.<br />More outside.</h2>
@@ -282,8 +273,7 @@
     </main>
     <footer class="wrap footer">
       <a class="brand" href="#home"
-        ><span class="brand-mark">C/F</span
-        ><span data-content="name">Cedar & Fern</span></a
+        ><img class="brand-mark" src="assets/cedar-fern-mark.png" alt="" width="48" height="48" /><span data-content="name">Cedar & Fern</span></a
       >
       <p>
         A fictional garden studio.<br />A working website sample by HensTek.

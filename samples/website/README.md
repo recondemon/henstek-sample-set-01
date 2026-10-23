@@ -23,7 +23,8 @@ From the repository root, run `npm ci` and `npm run dev`, then open `http://127.
 - `content.mjs`: default copy, field limits and inquiry validation.
 - `index.html`: sections, service descriptions, FAQs and metadata.
 - `styles.css`: colors, type, spacing and responsive layouts.
-- `assets/garden.svg`: original editable vector illustration.
+- `assets/cedar-fern-mark.png`: transparent botanical studio emblem.
+- `assets/courtyard.webp` and `assets/planting-detail.webp`: illustrative garden scenes for the fictional studio; not completed client commissions.
 - `app.js`: safe text rendering, local editing and inquiry preview.
 
 Update both the content defaults and the initial HTML copy when changing the template, so the site remains readable before scripts run. Keep labels and validation aligned. Rebuild with `npm run build`; `docs/web/` is generated output.
