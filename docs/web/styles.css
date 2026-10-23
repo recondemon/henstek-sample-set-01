@@ -944,3 +944,173 @@ dialog dd {
     transition: none !important;
   }
 }
+
+/* Fieldwork: measured lines, forest ink and a warm paper canvas. */
+:root {
+  --paper:#eeeee3;
+  --ink:#132a24;
+  --muted:#52665a;
+  --line:#c7cebb;
+  --lime:#c6e98d;
+  --serif:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.demo-bar {
+  background:#101d1b;
+  color:#c5d6c8;
+  font-family:monospace;
+  font-size:10px;
+}
+.header {
+  height:100px;
+  border-bottom:1px solid var(--line);
+}
+.brand {
+  font-weight:650;
+  letter-spacing:-1.3px;
+}
+.brand-mark {
+  font:12px monospace;
+  border:1px solid currentColor;
+  padding:10px;
+  letter-spacing:-1px;
+}
+.hero {
+  gap:6%;
+  padding-top:56px;
+  padding-bottom:70px;
+  grid-template-columns:1.05fr .95fr;
+}
+.hero h1 {
+  font-size:clamp(70px,7.7vw,112px);
+  font-weight:650;
+  letter-spacing:-.075em;
+  line-height:.96;
+}
+.eyebrow {
+  font-family:monospace;
+  letter-spacing:.12em;
+}
+.hero-art img {
+  height:auto;
+  aspect-ratio:820/940;
+  object-fit:contain;
+  border-radius:0;
+}
+.hero-art {
+  border:1px solid #a8b59a;
+  padding:10px;
+  background:#e3e7d7;
+}
+.art-note {
+  padding:14px 3px 4px;
+}
+.stamp {
+  display:none;
+}
+.hero-foot {
+  border-top:1px solid var(--line);
+  padding-top:22px;
+  margin-top:36px;
+}
+.tiny-flower {
+  font:12px monospace;
+  border:1px solid var(--ink);
+  padding:12px;
+}
+.button {
+  background:var(--lime);
+  border-color:var(--ink);
+  color:var(--ink);
+  border-radius:0;
+  font-weight:650;
+}
+.button:hover {
+  background:#d6efaf;
+  color:#132a24;
+}
+.service-section {
+  background:#142923;
+  color:#edf1df;
+}
+.service-section .eyebrow,.service-symbol {
+  color:var(--lime);
+}
+.service-section p,.service-section .number {
+  color:#b6c8b6;
+}
+.service-grid article {
+  border-color:#52705e;
+}
+.service-grid h3 {
+  font-weight:600;
+  font-size:27px;
+}
+.service-grid a {
+  border-color:#52705e;
+}
+.service-symbol {
+  font:18px monospace;
+  margin-bottom:35px;
+}
+.section-head h2,.about h2,.faq h2,.contact-grid h2 {
+  font-weight:600;
+  letter-spacing:-.055em;
+}
+.about-art {
+  background:#182f26;
+  border-radius:0;
+  overflow:hidden;
+}
+.about-art::before {
+  content:"CF / FIELD STUDY 01";
+  position:absolute;
+  top:22px;
+  left:24px;
+  color:#c6e98d;
+  font:10px monospace;
+  letter-spacing:.15em;
+}
+.about-art .arch {
+  background:#a9b38c;
+  border-radius:0;
+  transform:rotate(-6deg);
+  height:65%;
+}
+.about-label {
+  color:#bdd0af;
+}
+.contact-section {
+  background:#101e1b;
+}
+.contact-grid .light {
+  background:var(--lime);
+  color:#132a24;
+}
+.footer {
+  border-top:1px solid var(--line);
+}
+@media(max-width:700px) {
+  .hero {
+    grid-template-columns:1fr;
+    padding-top:35px;
+    gap:32px;
+  }
+  .hero h1 {
+    font-size:76px;
+  }
+  .hero-art {
+    max-width:520px;
+  }
+  .header {
+    height:90px;
+  }
+  .hero-art img {
+    height:auto;
+  }
+  .brand {
+    font-size:23px;
+  }
+  .service-grid h3 {
+    font-size:25px;
+  }
+}

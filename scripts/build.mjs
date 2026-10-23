@@ -1,4 +1,4 @@
-import { mkdir, copyFile, rm } from "node:fs/promises";
+import { mkdir, copyFile, rm, cp } from "node:fs/promises";
 import { resolve } from "node:path";
 const root = resolve(import.meta.dirname, "..");
 await rm(resolve(root, "docs"), { recursive: true, force: true });
@@ -26,3 +26,5 @@ await (
 console.log(
   "Built public catalog, website and desktop browser preview in docs/.",
 );
+
+await cp(resolve(root,"public/previews"),resolve(root,"docs/previews"),{recursive:true});

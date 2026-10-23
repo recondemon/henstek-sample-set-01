@@ -1,6 +1,6 @@
 # Verification record
 
-Checked on October 22, 2026. These are focused sample checks, not a complete production accessibility, security or platform certification.
+Core workflow checks completed October 22, 2026. Fieldwork presentation checks completed October 23, 2026. These are focused sample checks, not a complete production accessibility, security or platform certification.
 
 | Area | Result |
 | --- | --- |
@@ -13,6 +13,8 @@ Checked on October 22, 2026. These are focused sample checks, not a complete pro
 | Desktop browser preview | Chrome: create job, save/reload, search and validated archive import with replacement confirmation and exported JSON validation pass |
 | Native iPhone interaction | iPhone 17 Pro simulator, iOS 26.3.1: new visit, typed note, checklist/completion, filter, full restart persistence, share-sheet export to Files, validated import review/replacement and reset confirmation pass; portrait and landscape layouts inspected |
 | Native desktop interaction | Apple silicon macOS: create/edit job, scheduled status, search/filter, restricted internal navigation, native export/save dialog, JSON validation, import confirmation, reset and packaged-app cold restart persistence pass |
+
+The Fieldwork refresh passes the nine Node checks and a new iPhone simulator build and Apple silicon desktop package. The website navigation and editor, native desktop search/editor, and native iPhone editor in portrait/landscape were inspected with the new styling. HensTek and personal-site galleries were checked at 390px and desktop width; the mixed brief preserves functional and visual references independently. Screenshots reflect the refreshed interfaces. Data models and persistence behavior did not change in this refresh.
 
 A fresh clone installs, builds the browser site without output drift, passes the Node suite, and installs/audits the desktop dependencies successfully. GitHub Actions also passes the clean Node and macOS Swift/Xcode jobs.
 

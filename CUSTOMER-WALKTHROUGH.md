@@ -1,6 +1,6 @@
 # Using the samples with a client
 
-The current collection is **Sample Set 01 — Cedar & Fern**. Record the set number, platform and source revision in the customer brief so future alternate designs are unambiguous.
+The current collection is **Sample Set 01 — Cedar & Fern**. Use the labels **CF-01 / Web**, **CF-01 / Mobile** and **CF-01 / Desktop**. Record the functional starting point, visual reference and source revision in the customer brief so future alternate designs are unambiguous.
 
 Start with the customer's outcome, audience and current process. Show only the sample that fits the conversation. These are fictional examples, not completed client commissions or promised production features.
 
@@ -14,7 +14,7 @@ Start with the customer's outcome, audience and current process. Show only the s
 
 1. Ask what success looks like, who uses it, what already exists, the budget range, deadline and required platforms.
 2. Show the relevant sample and explain which parts work locally and which integrations need commissioning.
-3. Record what the customer wants to keep, change or remove. Separate launch essentials from later ideas.
+3. Choose the functional starting point and visual direction independently. For example, a customer might want CF-01 / Mobile’s checklist with CF-01 / Web’s colors and typography. Use the optional reference field for other samples or outside inspiration. Record what the customer wants to keep, change or remove. Separate launch essentials from later ideas.
 4. Return a written scope with deliverables, exclusions, acceptance checks, milestone payments, review windows and change handling. A sample is a starting point, not a quote.
 5. Agree vendor ownership and access. The default is client-owned domain, hosting, store and service accounts with delegated HensTek access. Decide how ongoing care and handoff will work.
 6. After the agreed contract and first payment, invite the customer to their private project portal. Keep milestones, decisions, deliverables and approved changes there; use email for formal approvals as agreed.

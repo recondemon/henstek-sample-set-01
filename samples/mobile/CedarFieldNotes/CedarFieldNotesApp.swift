@@ -70,7 +70,7 @@ struct FieldHome: View {
   @State private var pendingImport: VisitArchive?
   @State private var reset = false
   @State private var exportURL: URL?
-  private let green = Color(red: 0.10, green: 0.24, blue: 0.19)
+  private let green = Color(red: 0.78, green: 0.91, blue: 0.55)
   var visible: [Visit] {
     store.visits.filter { filter == "All" || (filter == "Complete" ? $0.complete : !$0.complete) }
       .sorted { $0.date < $1.date }
@@ -80,17 +80,17 @@ struct FieldHome: View {
       ScrollView {
         VStack(alignment: .leading, spacing: 24) {
           HStack {
-            Image(systemName: "leaf")
+            Text("C/F").font(.system(.caption, design: .monospaced).bold())
             Text("CEDAR & FERN").tracking(3).font(.caption.weight(.semibold))
             Spacer()
-            Text("ON DEVICE").font(.caption2.weight(.bold)).padding(8).background(
-              .white.opacity(0.65), in: Capsule())
+            Text("CF-01 / MOBILE").font(.caption2.weight(.bold)).padding(8).background(
+              .white.opacity(0.08), in: Capsule())
           }
           VStack(alignment: .leading, spacing: 10) {
-            Text("A little care.\nA lasting difference.").font(
-              .system(size: 38, weight: .regular, design: .serif))
-            Text("Field Notes").font(.headline)
-            Text("Your visits, checklists and care notes, together.").foregroundStyle(.secondary)
+            Text("Out in the field.").font(
+              .system(size: 38, weight: .semibold, design: .default))
+            Text("FIELD NOTES / CEDAR & FERN").font(.system(.caption, design: .monospaced)).tracking(1)
+            Text("Plan the visit. Do the work. Keep the details.").foregroundStyle(.secondary)
           }
           HStack {
             VStack(alignment: .leading) {
@@ -98,9 +98,9 @@ struct FieldHome: View {
               Text("visits ahead").font(.caption)
             }
             Spacer()
-            Image(systemName: "leaf.circle").font(.system(size: 58, weight: .ultraLight))
+            Image(systemName: "viewfinder").font(.system(size: 58, weight: .ultraLight))
           }.padding(24).background(
-            Color(red: 0.82, green: 0.89, blue: 0.64), in: RoundedRectangle(cornerRadius: 22))
+            Color(red: 0.78, green: 0.91, blue: 0.55), in: RoundedRectangle(cornerRadius: 8)).foregroundStyle(Color(red: 0.08, green: 0.17, blue: 0.13))
           Picker("Visit filter", selection: $filter) {
             ForEach(["Upcoming", "Complete", "All"], id: \.self) { Text($0) }
           }.pickerStyle(.segmented)
@@ -142,18 +142,18 @@ struct FieldHome: View {
                   Text(visit.complete ? "Complete" : "Planned")
                 }.font(.caption)
               }.frame(maxWidth: .infinity, alignment: .leading).padding(20).background(
-                .white, in: RoundedRectangle(cornerRadius: 20))
+                Color(red: 0.10, green: 0.18, blue: 0.14), in: RoundedRectangle(cornerRadius: 8)).overlay(RoundedRectangle(cornerRadius: 8).stroke(.white.opacity(0.12)))
             }.buttonStyle(.plain).accessibilityLabel(
               "\(visit.title), \(visit.client), \(visit.complete ? "complete" : "planned")")
           }
           VStack(alignment: .leading, spacing: 8) {
-            Text("HensTek · Sample Set 01").font(.caption.bold())
+            Text("CF-01 / MOBILE · FIELDWORK").font(.caption.bold())
             Text(
               "Fictional visits. No account, cloud sync or customer messaging. Your edits stay on this device until you export them."
             ).font(.caption).foregroundStyle(.secondary)
           }
         }.padding(24)
-      }.background(Color(red: 0.96, green: 0.95, blue: 0.91)).foregroundStyle(green)
+      }.background(Color(red: 0.06, green: 0.12, blue: 0.10)).foregroundStyle(Color(red: 0.93, green: 0.96, blue: 0.89))
         .safeAreaInset(edge: .bottom) {
           if let archive = pendingImport {
             VStack(alignment: .leading, spacing: 12) {
@@ -214,7 +214,7 @@ struct FieldHome: View {
         } message: {
           Text(store.error ?? "")
         }
-    }.tint(green)
+    }.tint(green).preferredColorScheme(.dark)
   }
 }
 struct VisitEditor: View {

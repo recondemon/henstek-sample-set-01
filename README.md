@@ -10,9 +10,11 @@ Future alternate designs will have their own numbered repositories, listed at [H
 
 | Sample | What you can try | Source and setup |
 | --- | --- | --- |
-| **Cedar & Fern website** | Responsive service site, content preview/save/undo, JSON content import/export, inquiry review | [Website guide](samples/website/README.md) · [Live demo](https://recondemon.github.io/henstek-sample-set-01/web/) |
-| **Field Notes for iPhone** | Visits, checklist, notes, completion, local persistence, JSON import/export | [iPhone guide](samples/mobile/README.md) |
-| **Studio Board for desktop** | Jobs, search, status filters, editing, local file storage, portable exports | [Desktop guide](samples/desktop/README.md) · [Browser preview](https://recondemon.github.io/henstek-sample-set-01/desktop/) |
+| **CF-01 / Web — Cedar & Fern** | Responsive service site, content preview/save/undo, JSON content import/export, inquiry review | [Website guide](samples/website/README.md) · [Live demo](https://recondemon.github.io/henstek-sample-set-01/web/) |
+| **CF-01 / Mobile — Field Notes** | Visits, checklist, notes, completion, local persistence, JSON import/export | [iPhone guide](samples/mobile/README.md) |
+| **CF-01 / Desktop — Studio Board** | Jobs, search, status filters, editing, local file storage, portable exports | [Desktop guide](samples/desktop/README.md) · [Browser preview](https://recondemon.github.io/henstek-sample-set-01/desktop/) |
+
+**Fieldwork** is the shared visual direction: forest ink, warm paper, lime details and an original courtyard plan. Choose workflow and style separately in a [mixed brief](https://henstek.dev/start?sample=set-01-iphone&style=cf-01-web).
 
 These examples demonstrate interface design, state management, validation, persistence, recovery and handoff. Each can be used on its own; they do **not** sync with each other. All records are fictional. There are no connected customer accounts, payments, messages or cloud databases.
 

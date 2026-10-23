@@ -4,11 +4,13 @@ Each numbered set is a distinct scenario and design direction with its own guide
 
 | Set | Scenario and design | Examples |
 | --- | --- | --- |
-| **[Sample Set 01](set-01/README.md)** | Cedar & Fern — warm, editorial garden studio | Website, native iPhone, Electron desktop/browser preview |
+| **[Sample Set 01](set-01/README.md)** | Cedar & Fern — Fieldwork, forest ink and warm paper | Website, native iPhone, Electron desktop/browser preview |
 
 ## Naming and references
 
-Use **Sample Set 01 — Cedar & Fern** in customer conversations. Reference an individual example as **Set 01 / Website**, **Set 01 / iPhone**, or **Set 01 / Desktop**. The stable machine identifiers are `set-01-website`, `set-01-iphone` and `set-01-desktop`.
+Use **Sample Set 01 — Cedar & Fern** in customer conversations. Reference an individual example as **CF-01 / Web**, **CF-01 / Mobile**, or **CF-01 / Desktop**. The stable machine identifiers are `set-01-website`, `set-01-iphone` and `set-01-desktop`.
+
+Keep functional and visual references separate in a brief. For example: “CF-01 / Mobile checklist with CF-01 / Web styling.” Later sets follow the same platform-label convention, and clients can mix references across sets. Record the agreed source revision when scoping the build.
 
 New alternate scenarios or substantially different visual directions get Set 02, Set 03 and subsequent numbers. Improvements to an existing set stay within that set and are tracked by Git commit or release version. A set number is not a software version or quality certification.
 

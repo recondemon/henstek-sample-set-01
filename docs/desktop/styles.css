@@ -535,3 +535,127 @@ select:focus {
     padding: 12px;
   }
 }
+
+/* Fieldwork desktop palette. */
+:root {
+  color-scheme:dark;
+  --bg:#101e1b;
+  --ink:#eef3e6;
+  --muted:#a5b6aa;
+  --line:#344c40;
+  --green:#c6e98d;
+  --lime:#c6e98d;
+}
+aside {
+  background:#152922;
+}
+.brand span {
+  font-family:inherit;
+  font-weight:650;
+}
+.brand small,.eyebrow,header p,.stats span,.table-head {
+  font-family:monospace;
+}
+.nav.active {
+  background:#c6e98d;
+  color:#16271f;
+}
+.avatar {
+  background:#304c3a;
+  color:#c6e98d;
+}
+.dot {
+  background:#c6e98d;
+}
+h1,h2 {
+  font-family:inherit;
+  font-weight:600;
+  letter-spacing:-.055em;
+}
+h1 {
+  font-size:48px;
+}
+.primary {
+  background:#c6e98d;
+  color:#17291f;
+  font-weight:650;
+}
+.primary:hover {
+  background:#d8efa9;
+}
+.stats article,.workspace {
+  background:#182c24;
+  border-radius:3px;
+}
+.stats article:first-child {
+  background:#c6e98d;
+  color:#17291f;
+  border-color:#c6e98d;
+}
+.stats article:first-child small {
+  color:#42533a;
+}
+.stats strong {
+  font-family:monospace;
+  font-size:42px;
+}
+.table-head {
+  background:#13251e;
+  color:#a6bdad;
+}
+.job {
+  color:var(--ink);
+}
+.job:hover {
+  background:#243f30;
+}
+.filters button {
+  color:#abc1b0;
+}
+.filters button.selected {
+  background:#c6e98d;
+  color:#16271f;
+}
+.search input,dialog input,dialog select,dialog textarea {
+  background:#102119;
+  color:#edf3e6;
+  border-color:#45634e;
+}
+.badge {
+  background:#284b35;
+  border-color:#4f7151;
+  color:#d1e9a5;
+}
+.job .badge.complete {
+  background:#233b31;
+  color:#a5b9aa;
+}
+.quiet:hover {
+  color:#edf3e6;
+}
+.heading {
+  border-top:1px solid var(--line);
+  margin-top:14px;
+}
+.footer-note {
+  font-family:monospace;
+  line-height:1.8;
+}
+.danger,#form-error {
+  color:#f0ad97;
+}
+.job:focus-visible {
+  outline:2px solid #c6e98d;
+  outline-offset:-3px;
+}
+@media(max-width:650px) {
+  h1 {
+    font-size:34px;
+  }
+  .stats strong {
+    font-size:30px;
+  }
+}
+.job {
+  border-color:var(--line);
+}
