@@ -25,3 +25,9 @@ Physical iPhone, Android, iPad, Windows and Linux checks, assistive-technology a
 The browser previews store edits locally. The iPhone and desktop apps have separate local files and compatible exports only within their own respective archive formats. There is no shared backend or cross-sample synchronization.
 
 Public source contains synthetic examples and no customer records, service credentials or production integrations. The website uses a botanical mark, illustrative garden scenes and system fonts. Sample imagery depicts the fictional studio rather than completed client commissions. The repository's MIT notice covers its code and included assets; dependencies have their own notices.
+
+## Interactive showcase — October 23, 2026
+
+Verified locally in Chrome: gallery image opens each web/mobile/desktop demo in the expanded viewer; Close and Escape return to the gallery, with focus restored to the initiating link. Mobile framing was checked at a 390 × 844 browser viewport. Web and desktop use the existing browser implementations. The mobile companion is a browser adaptation, not an iOS runtime.
+
+Mobile checks: Field Notes checklist changes and completion filters; Side A demo booking, ticket display and saved-record updates; Stillwater observation creation, favorite state and search. Desktop checks: job filtering, guest check-in totals and journal favorites. Existing model and published-asset checks pass. Native applications were not changed by this release.

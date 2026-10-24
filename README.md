@@ -64,3 +64,7 @@ The Node suite checks content and inquiry validation, import rejection, desktop 
 - `tests/` — data and recovery checks
 
 Contributions: [CONTRIBUTING.md](CONTRIBUTING.md). Security reports: [SECURITY.md](SECURITY.md).
+
+## Try every platform in the gallery
+
+Click a sample screen or **Try interactive preview** to open the working demo without leaving the gallery. Web and desktop use their existing browser interfaces; `/mobile/` is a browser adaptation of the SwiftUI screens. It is not an iOS emulator and does not include native device or file integrations. Mobile edits live in memory until reload or Reset demo. The viewer keeps the reference label and inquiry link visible. Press Escape or Close to return; Open separately is available if browser embedding/storage is restricted.
